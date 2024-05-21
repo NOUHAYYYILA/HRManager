@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du Personnel</title>
+    <link rel="stylesheet" href="css/Gpersonnel.css">
+    <script src="css/Gpersonnel.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Gestion du Personnel</h1>
+    <div class="section">
+        <h2>Rechercher un Employé</h2>
+        <input type="text" id="search-bar" placeholder="Rechercher par nom, prénom ou poste...">
+    </div>
+    <div class="section">
+        <h2>Liste des Employés</h2>
+        <table id="employees-table">
+            <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Poste</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Les lignes des employés seront insérées ici -->
+            </tbody>
+        </table>
+    </div>
+    <div class="section">
+        <h2>Ajouter un Nouvel Employé</h2>
+        <form id="add-employee-form">
+            <div class="form-group">
+                <label for="last-name">Nom :</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="first-name">Prénom :</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Poste :</label>
+                <input type="text" id="position" name="position" required>
+            </div>
+            <button type="submit">Ajouter Employé</button>
+        </form>
+    </div>
+</div>
+
+<script src="gestion_personnel.js"></script>
+</body>
+</html>

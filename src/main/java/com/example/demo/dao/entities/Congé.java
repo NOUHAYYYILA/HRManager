@@ -14,7 +14,7 @@ import java.util.Date;
 public class Congé {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)

@@ -1,32 +1,22 @@
 package com.example.demo.dao.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+import lombok.*;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String description;
 
-    // Constructeur par défaut
-    public Task() {}
 
-    // Constructeur avec paramètres
-    public Task(String description) {
-        this.description = description;
-    }
-
-    // Getter pour description
-    public String getDescription() {
-        return description;
-    }
-
-    // Setter pour description
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    @Override
-    public String toString() {
-        return description;
-    }
 }
-
-
-

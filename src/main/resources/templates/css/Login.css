@@ -1,0 +1,42 @@
+/* Style du formulaire */
+form {
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px; /* Ajouter de l'espace à l'intérieur du formulaire */
+    background-color: #f9f9f9; /* Couleur de fond du formulaire */
+    border-radius: 8px; /* Coins arrondis du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée du formulaire */
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Largeur à 100% pour remplir le conteneur parent */
+    padding: 10px; /* Ajouter de l'espace à l'intérieur du champ */
+    margin-bottom: 15px; /* Ajouter de l'espace entre les champs */
+    border: 1px solid #ccc; /* Bordure autour du champ */
+    border-radius: 5px; /* Coins arrondis du champ */
+    box-sizing: border-box; /* Inclure la bordure et le rembourrage dans la largeur */
+}
+
+/* Style du bouton */
+button {
+    width: 100%; /* Largeur à 100% pour remplir le conteneur parent */
+    padding: 10px; /* Ajouter de l'espace à l'intérieur du bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    border-radius: 5px; /* Coins arrondis du bouton */
+    cursor: pointer; /* Curseur de la souris en pointeur */
+}
+
+/* Style pour centrer les éléments de la page */
+body {
+    display: flex; /* Utiliser Flexbox pour centrer les éléments */
+    justify-content: center; /* Centrer horizontalement les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+    height: 100vh; /* Hauteur de la page à 100% de la hauteur de la fenêtre */
+    margin: 0; /* Supprimer les marges par défaut du corps */
+    background-color: #f5f5f5; /* Couleur de fond de la page */
+}

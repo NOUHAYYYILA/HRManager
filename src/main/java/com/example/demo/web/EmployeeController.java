@@ -18,7 +18,7 @@ public class EmployeeController {
     EmployeeManager employeeManager;
     @GetMapping("/")
     public String home(){
-        return "home";
+        return "connexion";
     }
     @GetMapping("")
     public String start() {
@@ -32,7 +32,7 @@ public class EmployeeController {
                                        @RequestParam(name = "prenom") String prenom,
                                        @RequestParam(name = "position")String position,
                                        @RequestParam(name = "adress") String adress){
-        Employee employee = new Employee(id,position,nom ,prenom ,adress);
+        Employee employee = new Employee();
         employeeManager.addEmployee(employee);
         return "redirect:indexpage";
     }
@@ -85,7 +85,7 @@ public class EmployeeController {
        Employee employee  = employeeManager.getEmployeeById(id);
         if (employee != null) {
             model.addAttribute("EmployeeToBeUpdated", employee);
-            return "updateEmployee";
+            return "Info";
         } else {
             return "error";
         }

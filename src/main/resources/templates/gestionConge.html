@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Congés</title>
+    <link rel="stylesheet" href="css/conge.css">
+    <link rel="stylesheet" href="fullcalendar/core/main.css">
+    <link rel="stylesheet" href="fullcalendar/daygrid/main.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gestion des Congés</h1>
+    <div id="calendar"></div>
+    <h2>Demande de Congé</h2>
+    <form id="demande-conge-form">
+        <div class="form-group">
+            <label for="date-debut">Date de début :</label>
+            <input type="date" id="date-debut" name="date-debut" required>
+        </div>
+        <div class="form-group">
+            <label for="date-fin">Date de fin :</label>
+            <input type="date" id="date-fin" name="date-fin" required>
+        </div>
+        <button type="submit">Demander Congé</button>
+    </form>
+    <h2>Vue d'ensemble des Congés</h2>
+    <div class="conges-overview">
+        <div class="conges-approuves">
+            <h3>Congés Approuvés</h3>
+            <ul id="liste-conges-approuves"></ul>
+        </div>
+        <div class="conges-en-attente">
+            <h3>Congés en Attente</h3>
+            <ul id="liste-conges-attente"></ul>
+        </div>
+        <div class="conges-refuses">
+            <h3>Congés Refusés</h3>
+            <ul id="liste-conges-refuses"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="fullcalendar/core/main.js"></script>
+<script src="fullcalendar/daygrid/main.js"></script>
+<script src="gestion_conges.js"></script>
+</body>
+</html>

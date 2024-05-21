@@ -9,12 +9,13 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "employee")
-@Getter
-@Setter
-@ToString
-public class Employee {
+@DiscriminatorValue("user")
+
+
+public  class Employee extends Administrator{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer id;
     @NotEmpty
     @Size(max = 100)

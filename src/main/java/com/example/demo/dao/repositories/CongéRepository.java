@@ -7,6 +7,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface CongéRepository extends JpaRepository<Congé, Integer> {
+public interface CongéRepository extends JpaRepository<Congé, Long> {
     Page<Congé> findByEmployee(Employee employee, Pageable pageable);
 }
